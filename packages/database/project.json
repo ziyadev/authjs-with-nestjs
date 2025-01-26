@@ -1,0 +1,31 @@
+{
+  "name": "@repo/database",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/database",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "dependsOn": ["build-cjs", "build-esm"]
+    },
+    "build-cjs": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "packages/database/dist/cjs",
+        "main": "packages/database/index.ts",
+        "tsConfig": "packages/database/tsconfig.cjs.json",
+        "clean": true
+      }
+    },
+    "build-esm": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "packages/database/dist/esm",
+        "main": "packages/database/index.ts",
+        "tsConfig": "packages/database/tsconfig.esm.json",
+        "clean": true
+      }
+    }
+  },
+
+  "tags": ["database", "package"]
+}

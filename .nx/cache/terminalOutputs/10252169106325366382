@@ -1,0 +1,40 @@
+[2m> [22mwebpack-cli build node-env=production
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  Unable to create bun lock files. Run bun install it's just as quick
+
+[webpack-cli] [31mHookWebpackError: argument 'value' must be either string of Buffer
+    at makeWebpackError (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/HookWebpackError.js:48:9)
+    at /Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:3217:12
+    at eval (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:23:1)
+    at fn (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:499:17)
+    at _next0 (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:21:1)
+    at eval (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:34:1)
+    at eval (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:11:1)
+    at /Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:521:10
+    at Hook.eval [as callAsync] (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:7:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/Hook.js:18:14)
+-- inner error --
+TypeError: argument 'value' must be either string of Buffer
+    at new RawSource (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack-sources/lib/RawSource.js:16:10)
+    at /Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/@nx/webpack/src/plugins/generate-package-json-plugin.js:40:82
+    at fn (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:497:10)
+    at _next0 (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:21:1)
+    at eval (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:34:1)
+    at eval (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:11:1)
+    at /Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:521:10
+    at Hook.eval [as callAsync] (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:7:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/Hook.js:18:14)
+    at /Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:534:46
+caused by plugins in Compilation.hooks.processAssets
+TypeError: argument 'value' must be either string of Buffer
+    at new RawSource (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack-sources/lib/RawSource.js:16:10)
+    at /Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/@nx/webpack/src/plugins/generate-package-json-plugin.js:40:82
+    at fn (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:497:10)
+    at _next0 (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:21:1)
+    at eval (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:34:1)
+    at eval (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:11:1)
+    at /Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:521:10
+    at Hook.eval [as callAsync] (eval at create (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:7:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/tapable/lib/Hook.js:18:14)
+    at /Users/ziyadev/Desktop/repos/authjs-with-nestjs/node_modules/webpack/lib/Compilation.js:534:46[39m

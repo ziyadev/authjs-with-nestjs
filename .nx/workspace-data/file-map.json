@@ -1,0 +1,599 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.3.3",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "eslint.config.cjs",
+        "hash": "4219588132382477313"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "13034869156922626510"
+      },
+      {
+        "file": "README.md",
+        "hash": "11031397435582873234"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5029877946677118718"
+      },
+      {
+        "file": "bun.lockb",
+        "hash": "13440200411495661900"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "package.json",
+        "hash": "11738073602263664948"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      }
+    ],
+    "projectFileMap": {
+      "@repo/database": [
+        {
+          "file": "packages/database/.gitignore",
+          "hash": "12975187279384539528"
+        },
+        {
+          "file": "packages/database/index.ts",
+          "hash": "17885867229412087158",
+          "deps": [
+            "npm:@prisma/client"
+          ]
+        },
+        {
+          "file": "packages/database/package.json",
+          "hash": "4367084514495880951"
+        },
+        {
+          "file": "packages/database/prisma/migrations/20250125175213_/migration.sql",
+          "hash": "3721596960235972526"
+        },
+        {
+          "file": "packages/database/prisma/migrations/migration_lock.toml",
+          "hash": "17579406468909820784"
+        },
+        {
+          "file": "packages/database/prisma/schema.prisma",
+          "hash": "12436421533549252006"
+        },
+        {
+          "file": "packages/database/project.json",
+          "hash": "11949845878696662732"
+        },
+        {
+          "file": "packages/database/tsconfig.cjs.json",
+          "hash": "12980740564042288593"
+        },
+        {
+          "file": "packages/database/tsconfig.esm.json",
+          "hash": "15234401636764352379"
+        },
+        {
+          "file": "packages/database/tsconfig.json",
+          "hash": "16325663841230475037"
+        }
+      ],
+      "web": [
+        {
+          "file": "apps/web/.gitignore",
+          "hash": "1867017717006394117"
+        },
+        {
+          "file": "apps/web/README.md",
+          "hash": "10766794746169900117"
+        },
+        {
+          "file": "apps/web/bun.lockb",
+          "hash": "15841992609060183391"
+        },
+        {
+          "file": "apps/web/components.json",
+          "hash": "518121916402328157"
+        },
+        {
+          "file": "apps/web/next.config.ts",
+          "hash": "17157214668998829023",
+          "deps": [
+            "npm:next@15.1.6"
+          ]
+        },
+        {
+          "file": "apps/web/package.json",
+          "hash": "7126483555290533641",
+          "deps": [
+            "npm:typescript",
+            "npm:@types/node@20.17.16",
+            "npm:@types/react@19.0.8",
+            "npm:@types/react-dom@19.0.3",
+            "npm:postcss@8.5.1",
+            "npm:tailwindcss",
+            "npm:eslint",
+            "npm:eslint-config-next@15.1.6",
+            "npm:@eslint/eslintrc",
+            "npm:@hookform/resolvers",
+            "@repo/database",
+            "npm:@radix-ui/react-accordion",
+            "npm:@radix-ui/react-alert-dialog",
+            "npm:@radix-ui/react-aspect-ratio",
+            "npm:@radix-ui/react-avatar",
+            "npm:@radix-ui/react-checkbox",
+            "npm:@radix-ui/react-collapsible",
+            "npm:@radix-ui/react-dialog",
+            "npm:@radix-ui/react-dropdown-menu",
+            "npm:@radix-ui/react-hover-card",
+            "npm:@radix-ui/react-label",
+            "npm:@radix-ui/react-popover",
+            "npm:@radix-ui/react-radio-group",
+            "npm:@radix-ui/react-slot",
+            "npm:@radix-ui/react-switch",
+            "npm:@radix-ui/react-tabs",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "npm:date-fns",
+            "npm:lucide-react",
+            "npm:next@15.1.6",
+            "npm:next-auth",
+            "npm:next-themes",
+            "npm:react@19.0.0",
+            "npm:react-day-picker",
+            "npm:react-dom@19.0.0",
+            "npm:react-hook-form",
+            "npm:sonner",
+            "npm:tailwind-merge",
+            "npm:tailwindcss-animate",
+            "npm:vaul",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "apps/web/postcss.config.mjs",
+          "hash": "2557392112968376575"
+        },
+        {
+          "file": "apps/web/project.json",
+          "hash": "13045507804744063204"
+        },
+        {
+          "file": "apps/web/public/file.svg",
+          "hash": "15617830351863523835"
+        },
+        {
+          "file": "apps/web/public/globe.svg",
+          "hash": "9134466864871335697"
+        },
+        {
+          "file": "apps/web/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/web/public/vercel.svg",
+          "hash": "3007623926711696394"
+        },
+        {
+          "file": "apps/web/public/window.svg",
+          "hash": "16677869292061012332"
+        },
+        {
+          "file": "apps/web/src/app/api/auth/[...nextauth]/route.ts",
+          "hash": "10483204438266606130"
+        },
+        {
+          "file": "apps/web/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/web/src/app/globals.css",
+          "hash": "4952185895146859707"
+        },
+        {
+          "file": "apps/web/src/app/layout.tsx",
+          "hash": "8317637767774124723",
+          "deps": [
+            "npm:next@15.1.6"
+          ]
+        },
+        {
+          "file": "apps/web/src/app/page.tsx",
+          "hash": "5398478217973701257",
+          "deps": [
+            "npm:next@15.1.6"
+          ]
+        },
+        {
+          "file": "apps/web/src/app/sign-in/page.tsx",
+          "hash": "16291606830517114123",
+          "deps": [
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/login-form.tsx",
+          "hash": "2229884809323819969"
+        },
+        {
+          "file": "apps/web/src/components/ui/accordion.tsx",
+          "hash": "6229836667991034670",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-accordion",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/alert-dialog.tsx",
+          "hash": "10965094998479154241",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-alert-dialog"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/alert.tsx",
+          "hash": "7317990078770239904",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/aspect-ratio.tsx",
+          "hash": "5515004553788436449",
+          "deps": [
+            "npm:@radix-ui/react-aspect-ratio"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/avatar.tsx",
+          "hash": "8660661188500548189",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-avatar"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/badge.tsx",
+          "hash": "9820710507085213727",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/button.tsx",
+          "hash": "9267699881977892517",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-slot",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/calendar.tsx",
+          "hash": "5482098939948310865",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:lucide-react",
+            "npm:react-day-picker"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/card.tsx",
+          "hash": "10705375868451136261",
+          "deps": [
+            "npm:react@19.0.0"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/checkbox.tsx",
+          "hash": "11417592238472237284",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-checkbox",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/collapsible.tsx",
+          "hash": "11550741736187478023",
+          "deps": [
+            "npm:@radix-ui/react-collapsible"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/dialog.tsx",
+          "hash": "9175162809309498817",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-dialog",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/drawer.tsx",
+          "hash": "12662813428787543576",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:vaul"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/dropdown-menu.tsx",
+          "hash": "6587543215777139890",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-dropdown-menu",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/form.tsx",
+          "hash": "17214337728809531704",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-label",
+            "npm:@radix-ui/react-slot",
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/hover-card.tsx",
+          "hash": "1120689349430845509",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-hover-card"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/input.tsx",
+          "hash": "10270228290145902228",
+          "deps": [
+            "npm:react@19.0.0"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/label.tsx",
+          "hash": "17461498100996495370",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-label",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/popover.tsx",
+          "hash": "14169858307434860779",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-popover"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/radio-group.tsx",
+          "hash": "18329601590791789915",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-radio-group",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/sheet.tsx",
+          "hash": "16939179561819926374",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-dialog",
+            "npm:class-variance-authority",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/skeleton.tsx",
+          "hash": "8682262600359381656"
+        },
+        {
+          "file": "apps/web/src/components/ui/sonner.tsx",
+          "hash": "997587589519513927",
+          "deps": [
+            "npm:next-themes",
+            "npm:sonner"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/switch.tsx",
+          "hash": "9059707436756408233",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-switch"
+          ]
+        },
+        {
+          "file": "apps/web/src/components/ui/tabs.tsx",
+          "hash": "15637375351129848662",
+          "deps": [
+            "npm:react@19.0.0",
+            "npm:@radix-ui/react-tabs"
+          ]
+        },
+        {
+          "file": "apps/web/src/lib/utils.ts",
+          "hash": "6483145186850064023",
+          "deps": [
+            "npm:clsx",
+            "npm:tailwind-merge"
+          ]
+        },
+        {
+          "file": "apps/web/src/middleware.ts",
+          "hash": "11891250363390004352"
+        },
+        {
+          "file": "apps/web/src/utils/auth.ts",
+          "hash": "12499756130654006470",
+          "deps": [
+            "npm:next-auth",
+            "npm:@auth/prisma-adapter",
+            "@repo/database"
+          ]
+        },
+        {
+          "file": "apps/web/tailwind.config.ts",
+          "hash": "18327709974268705328",
+          "deps": [
+            "npm:tailwindcss",
+            [
+              "npm:tailwindcss-animate",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "4965826641429490352"
+        }
+      ],
+      "api": [
+        {
+          "file": "apps/api/nest-cli.json",
+          "hash": "12265878335020862855"
+        },
+        {
+          "file": "apps/api/package.json",
+          "hash": "5696438776085463441",
+          "deps": [
+            "@repo/database"
+          ]
+        },
+        {
+          "file": "apps/api/project.json",
+          "hash": "18184039099814183427"
+        },
+        {
+          "file": "apps/api/src/app/app.controller.spec.ts",
+          "hash": "7647647754668916054",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.controller.ts",
+          "hash": "418853970123971809",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:express",
+            "@repo/database"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.module.ts",
+          "hash": "11673476679848632172",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.service.spec.ts",
+          "hash": "13111976464657524091",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "18204635715240431270",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@auth/express"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "6642416146672581015"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "3025378044812449119"
+        },
+        {
+          "file": "apps/api/webpack.config.js",
+          "hash": "3774360504015463941",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ]
+    }
+  }
+}

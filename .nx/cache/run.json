@@ -1,0 +1,54 @@
+{
+  "run": {
+    "command": "nx serve api",
+    "startTime": "2025-01-26T15:43:19.195Z",
+    "endTime": "2025-01-26T15:43:46.298Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@repo/database:build-cjs",
+      "target": "build-cjs",
+      "projectName": "@repo/database",
+      "hash": "9654498368285921571",
+      "startTime": "2025-01-26T15:43:19.223Z",
+      "endTime": "2025-01-26T15:43:35.895Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@repo/database:build-esm",
+      "target": "build-esm",
+      "projectName": "@repo/database",
+      "hash": "11159648709990462302",
+      "startTime": "2025-01-26T15:43:19.223Z",
+      "endTime": "2025-01-26T15:43:36.231Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@repo/database:build",
+      "target": "build",
+      "projectName": "@repo/database",
+      "hash": "13794429294290885397",
+      "startTime": "2025-01-26T15:43:36.235Z",
+      "endTime": "2025-01-26T15:43:36.242Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "api:serve:development",
+      "target": "serve",
+      "projectName": "api",
+      "hash": "16057837040022605027",
+      "startTime": "2025-01-26T15:43:36.246Z",
+      "endTime": "2025-01-26T15:43:46.297Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
